@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 body {
@@ -175,15 +176,21 @@ h1 {
     border-radius: 10px;
     color: rgb(0,0,0,.6);
     font-weight: 600;
+    font-size: .9rem;
+}
+
+.dropdown.active .options{
+    display: block;
 }
 
 .dropdown:hover{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(236, 236, 236);
 }
 
 .bx{
     color: rgb(0,0,0,.6);
     margin-right: 10px;
+    transform: translateY(2px);
     font-size: 1.25rem;
 }
 
@@ -194,10 +201,31 @@ h1 {
     text-align: left;
     line-height: 40px;
     position: sticky;
-    margin-top: 370px;
+    margin-top: 420px;
     margin-left: -180px;
     box-shadow: 0 0 8px rgb(0,0,0,.4);
-    /* display: none; */
+    display: none;
+}
+
+.search::after{
+    content: '';
+    position: relative;
+    width: 8px;
+    height: 8px;
+    right: 25px;
+    bottom: 3px;
+    border: 2px solid rgb(0,0,0,.5);
+    border-top: transparent;
+    border-left: transparent;
+    transform: rotate(45deg);
+    z-index: 1000;
+    transition: .4s;
+    pointer-events: none;
+}
+
+.search.active::after{
+    bottom: -3px;
+    transform: rotate(225deg);
 }
 
 .options div{
@@ -208,5 +236,53 @@ h1 {
 }
 
 .options div:hover{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(236, 236, 236);
+}
+
+.opts, .filter{
+    margin-top: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 0 10%;
+    gap: 12px;
+}
+
+.opts-btn{
+    padding: 8px 15px;
+    border-radius: 100px;
+    color: rgb(0,0,0,.5);
+    font-weight: 700;
+}
+
+.opts-btn:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+a:focus .opts-btn{
+    background-color: rgb(236, 236, 236);
+    color: cornflowerblue;
+}
+
+a:focus .opts-btn i{
+    color: black;
+}
+
+.filter{
+    margin: 0 0;
+    height: 70px;
+}
+
+.filter a div{
+    padding: 3px 15px;
+    border-radius: 10px;
+    color: rgb(0,0,0,.7);
+    background-color: transparent;
+    border: 1px solid rgb(0,0,0,.5);
+    transition: .2s;
+}
+
+.filter a div:hover{
+    border: 1px solid rgb(0,0,0,1);
 }

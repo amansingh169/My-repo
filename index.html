@@ -33,18 +33,48 @@
 
             <input class="dropdown" placeholder="All media" readonly>
             <div class="options">
+                <div onclick="show('All media')"><i class='bx bx-image-alt'></i>All media</div>
                 <div onclick="show('Images')"><i class='bx bx-image-alt'></i>Images</div>
-                <div onclick="show('Videos')"><i class='bx bx-video' ></i>Videos</div>
-                <div onclick="show('Music')"><i class='bx bxs-music' ></i>Music</div>
-                <div onclick="show('Sound effects')"><i class='bx bxl-deezer' ></i>Sound effects</div>
+                <div onclick="show('Videos')"><i class='bx bx-video'></i>Videos</div>
+                <div onclick="show('Music')"><i class='bx bxs-music'></i>Music</div>
+                <div onclick="show('Sound effects')"><i class='bx bxl-deezer'></i>Sound effects</div>
                 <div onclick="show('Users')"><i class='bx bxs-user'></i>Users</div>
             </div>
         </div>
     </center>
 
+    <div class="opts">
+        <a href="#"><div class="opts-btn"><i class='bx bx-image-alt'></i>Images</div></a>
+        <a href="#"><div class="opts-btn"><i class='bx bx-video'></i>Videos</div></a>
+        <a href="#"><div class="opts-btn"><i class='bx bxs-music'></i>Music</div></a>
+        <a href="#"><div class="opts-btn"><i class='bx bxl-deezer'></i>Sound effects</div></a>
+        <a href="#"><div class="opts-btn"><i class='bx bxs-user'></i>Users</div></a>
+    </div>
+
+    <div class="filter">
+        <a href=""><div>nature</div></a>
+        <a href=""><div>wallpaper</div></a>
+        <a href=""><div>background</div></a>
+        <a href=""><div>sky</div></a>
+        <a href=""><div>scenery</div></a>
+        <a href=""><div>food</div></a>
+        <a href=""><div>water</div></a>
+        <a href=""><div>flowers</div></a>
+        <a href=""><div>beach</div></a>
+        <a href=""><div>love</div></a>
+        <a href=""><div>cat</div></a>
+        <a href=""><div>forest</div></a>
+        <a href=""><div>iphone wallpaper</div></a>
+    </div>
+
     <script>
         function show(anything){
             document.querySelector('.dropdown').value = anything;
+        }
+
+        let drop = document.querySelector('.dropdown');
+        drop.onclick = function(){
+            drop.classList.toggle('active');
         }
     </script>
 </html>
