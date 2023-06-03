@@ -79,8 +79,9 @@ body {
     font-size: 28px;
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     transition: .3s;
+    letter-spacing: 2px;
 }
 
 span {
@@ -285,4 +286,23 @@ a:focus .opts-btn i{
 
 .filter a div:hover{
     border: 1px solid rgb(0,0,0,1);
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 3.5%;
+    gap: 20px;
+    height: 100vh;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.block img {
+    width: 100%;
+    height: auto;
 }
