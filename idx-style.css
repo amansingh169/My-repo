@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 251, 245);
+    height: 2000px;
+    color: #ededed;
+    background-image: url(Space\ mine1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 6%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* background: #0E8388; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    /* background-color: red; */
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.items a {
+    font-size: 18px;
+    color: #ededed66;
+    text-decoration: none;
+    font-weight: 600;
+    /* margin-left: 35px; */
+    transition: .2s;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    transform: translateY(-27px);
+    color: #ededed;
+    /* transform: rotate(360deg); */
+}
+
+.navbar a:focus{
+    color: #ededed;
+    transform: translateY(-27px);
+    /* text-decoration: underline; */
+    color: deepskyblue;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+/* .logo span{
+    transition: .3s;
+}
+
+.logo:hover span:after{
+    content: "'";
+}
+
+.logo:hover span{
+    margin-right: 3px;
+} */
+
+.about{
+    text-align: left;
+    padding: 20px 6%;
+}
+
+h1{
+    margin-top: 200px;
+    font-size: 3rem;
+}
+
+#ann{
+    animation: rainbow 5s ease alternate infinite;
+    stroke: 1px green;
+}
+
+@keyframes rainbow {
+
+    0%{
+        color: rgb(255, 108, 255);
+    }
+
+    25%{
+        color: rgb(255, 72, 72);
+    }
+
+    50%{
+        color: rgb(255, 255, 58);
+    }
+
+    75%{
+        color: rgb(69, 255, 69);
+    }
+
+    100%{
+        color: rgb(68, 133, 255);
+    }
+}
