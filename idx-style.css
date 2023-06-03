@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
+    /* height: 200vh; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,35 +11,38 @@
 body {
     background-color: rgb(255, 251, 245);
     height: 2000px;
-    color: black;
-    background-image: url(Space\ mine1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background: url(Space\ mine1.png) center contain;
+    color: white;
+    background: url(Assets/Torch\ render2.png) top/contain no-repeat;
 }
 
-.header {
+#header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 6%;
-    background-color: transparent;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     z-index: 100;
-    /* background: #0E8388; */
+    background: rgba(34, 34, 34, 0.25);
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
 }
 
-.navbar{
+.change {
+    background-color: rgba(34, 34, 34, 0.8);
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     width: 40%;
     align-items: center;
 }
 
-.items{
+.items {
     display: flex;
     flex-direction: column;
     height: 24px;
@@ -49,7 +53,7 @@ body {
 
 .items a {
     font-size: 18px;
-    color: #5f5f5f;
+    color: #afafaf;
     text-decoration: none;
     font-weight: 600;
     /* margin-left: 35px; */
@@ -57,14 +61,14 @@ body {
     text-decoration: none;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     transform: translateY(-27px);
-    color: black;
+    color: rgb(255, 255, 255);
     /* transform: rotate(360deg); */
 }
 
-.navbar a:focus{
-    color: #ededed;
+.navbar a:focus {
+    /* color: #ededed; */
     transform: translateY(-27px);
     /* text-decoration: underline; */
     color: deepskyblue;
@@ -72,13 +76,13 @@ body {
 
 .logo {
     font-size: 28px;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     transition: .3s;
 }
 
-span{
+span {
     color: cornflowerblue;
 }
 
@@ -94,45 +98,115 @@ span{
     margin-right: 3px;
 } */
 
-.about{
-    text-align: left;
+.about {
+    text-align: center;
     padding: 20px 6%;
 }
 
-h1{
+h1 {
     margin-top: 200px;
     font-size: 3rem;
 }
 
-#ann{
+#ann {
     animation: rainbow 5s linear infinite;
-
-    stroke: 1px green;
 }
 
 @keyframes rainbow {
 
-    0%{
+    0% {
         color: #FF0000;
     }
 
-    20%{
+    20% {
         color: #9400D3;
     }
 
-    40%{
+    40% {
         color: #0000FF;
     }
 
-    60%{
+    60% {
         color: #00e200;
     }
 
-    80%{
+    80% {
         color: #FF7F00;
     }
 
-    100%{
+    100% {
         color: #FF0000;
     }
+}
+
+.search{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 7px 10px rgb(0,0,0,.5);
+}
+
+.bx-search{
+    margin: 15px;
+    font-size: 2rem;
+    color: rgb(0,0,0,.3);
+}
+
+#s-box{
+    margin-left: 6px;
+    margin-right: 190px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.dropdown{
+    height: 40px;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(0,0,0,.6);
+    font-weight: 600;
+}
+
+.dropdown:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+.bx{
+    color: rgb(0,0,0,.6);
+    margin-right: 10px;
+    font-size: 1.25rem;
+}
+
+.options{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    line-height: 40px;
+    position: sticky;
+    margin-top: 370px;
+    margin-left: -180px;
+    box-shadow: 0 0 8px rgb(0,0,0,.4);
+    /* display: none; */
+}
+
+.options div{
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+    color: rgb(0,0,0,.7);
+}
+
+.options div:hover{
+    background-color: rgb(224, 224, 224);
 }

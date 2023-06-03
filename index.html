@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="idx-style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="ext-scripts/jquery-3.7.0.js"></script>
+</body>
 </head>
 <body>
-    <header class="header">
+    <header id="header">
         <a href="#" class="logo">Aman<span>.</span></a>
         
         <nav class="navbar">
@@ -23,10 +25,26 @@
         <div class="about">
             <h1>Explore royalty-free images and videos</h1>
             <p>Over 4 million+ high quality stock images, videos and music shared by our talented community.</p><br>
-            <p id="ann"><i class='bx bx-party'></i> 1st Anniversay!</p>
+            <!-- <p id="ann"><i class='bx bx-party'></i> 1st Anniversay!</p> -->
+        </div>
+        <div class="search">
+            <a href=""><i class="bx bx-search"></i></a>
+            <input type="text" id="s-box" placeholder="Type something...">
+
+            <input class="dropdown" placeholder="All media" readonly>
+            <div class="options">
+                <div onclick="show('Images')"><i class='bx bx-image-alt'></i>Images</div>
+                <div onclick="show('Videos')"><i class='bx bx-video' ></i>Videos</div>
+                <div onclick="show('Music')"><i class='bx bxs-music' ></i>Music</div>
+                <div onclick="show('Sound effects')"><i class='bx bxl-deezer' ></i>Sound effects</div>
+                <div onclick="show('Users')"><i class='bx bxs-user'></i>Users</div>
+            </div>
         </div>
     </center>
 
-    <script src="idx-script.js"></script>
-</body>
+    <script>
+        function show(anything){
+            document.querySelector('.dropdown').value = anything;
+        }
+    </script>
 </html>
