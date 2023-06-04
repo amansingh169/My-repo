@@ -160,7 +160,6 @@ h1 {
 .visible, .visible div{
     display: flex;
     align-items: center;
-    justify-content: end;
 }
 
 .visible a i{
@@ -189,10 +188,6 @@ h1 {
     margin-left: 183px;
 }
 
-.dropdown .active .options{
-    display: block;
-}
-
 .dropdown:hover{
     background-color: rgb(236, 236, 236);
 }
@@ -210,11 +205,17 @@ h1 {
     padding: 10px;
     text-align: left;
     line-height: 40px;
+    box-shadow: 0 0 8px rgb(0,0,0,.4);
+    z-index: 100;
+    
     position: sticky;
     margin-top: 420px;
-    margin-left: -180px;
-    box-shadow: 0 0 8px rgb(0,0,0,.4);
+    margin-left: -175px;
     display: none;
+}
+
+.active {
+    display: block;
 }
 
 .search::after{
@@ -233,7 +234,7 @@ h1 {
     pointer-events: none;
 }
 
-.search.active::after{
+.search .active::after{
     bottom: -3px;
     transform: rotate(225deg);
 }

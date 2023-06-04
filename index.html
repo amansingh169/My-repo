@@ -34,9 +34,9 @@
                     <input type="text" id="s-box" placeholder="Type something...">
                 </div>
                 
-                <input class="dropdown" placeholder="All media" readonly>
+                <input class="dropdown" onclick="drop()" placeholder="All media" readonly>
             </div>
-            <div class="options">
+            <div class="options " id="options">
                 <div onclick="show('All media')"><i class='bx bx-image-alt'></i>All media</div>
                 <div onclick="show('Images')"><i class='bx bx-image-alt'></i>Images</div>
                 <div onclick="show('Videos')"><i class='bx bx-video'></i>Videos</div>
@@ -46,7 +46,7 @@
             </div>
         </div>
     </center>
-
+    
     <div class="opts">
         <a href="#"><div class="opts-btn"><i class='bx bx-image-alt'></i>Images</div></a>
         <a href="#"><div class="opts-btn"><i class='bx bx-video'></i>Videos</div></a>
@@ -166,9 +166,14 @@
             document.querySelector('.dropdown').value = anything;
         }
 
-        let drop = document.querySelector('.dropdown');
-        drop.onclick = function(){
-            drop.classList.toggle('active');
+        // let drop = document.querySelector('.dropdown');
+        // drop.onclick = function(){
+        //     drop.classList.toggle('active');
+        // }
+
+        function drop() {
+            var droping = document.getElementById("options");
+            droping.classList.toggle("active");
         }
     </script>
 </html>
