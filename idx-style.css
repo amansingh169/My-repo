@@ -157,15 +157,19 @@ h1 {
     box-shadow: 0 7px 10px rgb(0,0,0,.5);
 }
 
-.bx-search{
+.visible, .visible div{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.visible a i{
     margin: 15px;
     font-size: 2rem;
     color: rgb(0,0,0,.3);
 }
 
 #s-box{
-    margin-left: 6px;
-    margin-right: 190px;
     border: none;
     outline: none;
     font-size: 1rem;
@@ -182,9 +186,10 @@ h1 {
     color: rgb(0,0,0,.6);
     font-weight: 600;
     font-size: .9rem;
+    margin-left: 183px;
 }
 
-.dropdown.active .options{
+.dropdown .active .options{
     display: block;
 }
 
