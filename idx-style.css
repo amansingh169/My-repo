@@ -20,6 +20,11 @@ body {
     background-position: top;
 }
 
+.top{
+    background: url(Assets/alexis-antoine-kXMe4hugFA4-unsplash111.jpg) center/cover;
+    height: 550px;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -176,7 +181,7 @@ h1 {
 
 .dropdown{
     height: 40px;
-    width: 120px;
+    width: 150px;
     padding: 10px;
     border: none;
     outline: none;
@@ -186,6 +191,7 @@ h1 {
     font-weight: 600;
     font-size: .9rem;
     margin-left: 183px;
+    transform: translateX(-18px);
 }
 
 .dropdown:hover{
@@ -218,7 +224,7 @@ h1 {
     display: block;
 }
 
-.search::after{
+/* .dropdown::before{
     content: '';
     position: relative;
     width: 8px;
@@ -232,9 +238,9 @@ h1 {
     z-index: 1000;
     transition: .4s;
     pointer-events: none;
-}
+} */
 
-.search .active::after{
+.options .active::before{
     bottom: -3px;
     transform: rotate(225deg);
 }
