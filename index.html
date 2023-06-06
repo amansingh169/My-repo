@@ -73,7 +73,7 @@
         <a href=""><div>iphone wallpaper</div></a>
     </div>
 
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <div class="col col1">
             <div class="block"><img loading="lazy" src="Assets/alonso-reyes-haZNHEV2WXQ-unsplash.jpg" alt=""></div>
             <div class="block"><img loading="lazy" src="Assets/attack_on_titan_s4.jpg" alt=""></div>
@@ -103,8 +103,8 @@
             <div class="block"><img loading="lazy" src="Assets/eren_yeager (2).jpg" alt=""></div>
             <div class="block"><img loading="lazy" src="Assets/BRACHIOSAURUS RENDER.png" alt=""></div>
             <div class="block"><img loading="lazy" src="Assets/barrel_2.png" alt=""></div>
-            <div class="block"><img loading="lazy" src="Assets/can render.png" alt=""></div>
             <div class="block"><img loading="lazy" src="Assets/pexels-jarod-lovekamp-3791466.jpg" alt=""></div>
+            <div class="block"><img loading="lazy" src="Assets/can render.png" alt=""></div>
             <div class="block"><img loading="lazy" src="Assets/max-22zwZgax33c-unsplash.jpg" alt=""></div>
         </div>
         <div class="col col4">
@@ -120,9 +120,9 @@
         </div>
     </div>
     <center>
-        <button class="load">Load More</button>
+        <button class="load" onclick="loadmore()">Load More</button>
     </center>
-    <br><br><br><hr>
+    <br>
         <footer class="foot">
             <div class="brand">
                 <h1 class="logo">Aman<span>.</span></h1><br>
@@ -180,6 +180,11 @@
             var droping = document.getElementById("options");
             droping.classList.toggle("active");
         }
+
+        // function loadmore() {
+        //     var ext = document.getElementsById("gallery");
+        //     ext.classList.toggle("lm");
+        // }
     </script>
 </body>
 </html>
