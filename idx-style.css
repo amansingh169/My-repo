@@ -30,11 +30,11 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 6%;
+    padding: 20px 2%;
     display: flex;
     justify-content: space-between;
     z-index: 100;
-    background: rgba(34, 34, 34, 0.25);
+    /* background: rgba(34, 34, 34, 0.25); */
     -webkit-transition: all ease-out .5s;
     -moz-transition: all ease-out .5s;
     -o-transition: all ease-out .5s;
@@ -42,7 +42,7 @@ body {
 }
 
 .change {
-    background-color: rgba(34, 34, 34, 0.8);
+    background-color: rgba(34, 34, 34, 0.5);
 }
 
 .navbar {
@@ -63,7 +63,7 @@ body {
 
 .items a {
     font-size: 18px;
-    color: #afafaf;
+    color: #dcdcdc;
     text-decoration: none;
     font-weight: 600;
     /* margin-left: 35px; */
@@ -155,11 +155,13 @@ h1 {
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     height: 60px;
     width: 600px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 7px 10px rgb(0,0,0,.5);
+    margin-top: 35px;
 }
 
 .visible, .visible div{
@@ -183,6 +185,7 @@ h1 {
     height: 40px;
     width: 150px;
     padding: 10px;
+    position: absolute;
     border: none;
     outline: none;
     cursor: pointer;
@@ -190,7 +193,7 @@ h1 {
     color: rgb(0,0,0,.6);
     font-weight: 600;
     font-size: .9rem;
-    margin-left: 183px;
+    margin-left: 447px;
     transform: translateX(-18px);
 }
 
@@ -224,7 +227,7 @@ h1 {
     display: block;
 }
 
-/* .dropdown::before{
+.dropdown::before{
     content: '';
     position: relative;
     width: 8px;
@@ -238,9 +241,9 @@ h1 {
     z-index: 1000;
     transition: .4s;
     pointer-events: none;
-} */
+}
 
-.options .active::before{
+.dropdown .active::after{
     bottom: -3px;
     transform: rotate(225deg);
 }
@@ -257,7 +260,6 @@ h1 {
 }
 
 .opts, .filter{
-    margin-top: 77px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,7 +310,7 @@ a:focus .opts-btn i{
 .gallery{
     display: flex;
     justify-content: center;
-    margin: 20px 3.5%;
+    margin: 20px -1%;
     gap: 20px;
     height: 300vh;
     overflow: hidden;
