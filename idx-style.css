@@ -24,7 +24,11 @@ body {
     height: 470px;
 }
 
-#header {
+/* .change1{
+    background: url(Assets/alexis-antoine-kXMe4hugFA4-unsplash111.jpg) center/cover;
+} */
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -34,54 +38,29 @@ body {
     justify-content: space-between;
     z-index: 100;
     /* background: rgba(34, 34, 34, 0.25); */
-    -webkit-transition: all ease-out .5s;
-    -moz-transition: all ease-out .5s;
-    -o-transition: all ease-out .5s;
-    transition: all ease-out .5s;
+    -webkit-transition: all ease-out .3s;
+    -moz-transition: all ease-out .3s;
+    -o-transition: all ease-out .3s;
+    transition: all ease-out .3s;
     background: linear-gradient(to bottom, rgba(34, 34, 34, .9), transparent);
 }
 
 .change {
-    background-color: rgba(34, 34, 34, 0.5);
+    background: white;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding: 10px 2%;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-    align-items: center;
+.change .logo{
+    color: black;
 }
 
-.items {
-    display: flex;
-    flex-direction: column;
-    height: 24px;
-    /* background-color: red; */
-    overflow: hidden;
-    justify-content: flex-start;
+.change .items a{
+    color: rgb(105, 105, 105);
 }
 
-.items a {
-    font-size: 18px;
-    color: #dcdcdc;
-    text-decoration: none;
-    font-weight: 600;
-    /* margin-left: 35px; */
-    transition: .2s;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    transform: translateY(-27px);
-    color: rgb(255, 255, 255);
-    /* transform: rotate(360deg); */
-}
-
-.navbar a:focus {
-    /* color: #ededed; */
-    transform: translateY(-27px);
-    /* text-decoration: underline; */
-    color: deepskyblue;
+.change .items a:hover{
+    color: black;
 }
 
 .logo {
@@ -91,6 +70,7 @@ body {
     font-weight: 700;
     transition: .3s;
     letter-spacing: 2px;
+    transition: .3s;
 }
 
 span {
@@ -108,6 +88,98 @@ span {
 .logo:hover span{
     margin-right: 3px;
 } */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    /* background-color: red; */
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.explore{
+    position: absolute;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(0,0,0,.4);
+}
+
+/* --------------------------here flex declaration-------------------------- */
+
+.explore, .e-drop1, .e-drop2{
+    display: flex;
+    flex-direction: column;
+}
+
+.e-drop{
+    display: flex;
+    padding: 20px;
+    line-height: 40px;
+    gap: 30px;
+    /* display: none; */
+}
+
+.e-drop1{
+    gap: 7px;
+    border-right: 2px solid grey;
+    padding-right: 30px;
+}
+
+.e-drop2{
+    gap: 8.5px;
+    margin-bottom: 20px;
+}
+
+.drop-heading{
+    line-height: normal;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: black;
+}
+
+.drop-item div{
+    color: rgb(0,0,0,.5);
+    line-height: normal;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.drop-item div:hover{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.items a {
+    font-size: 18px;
+    color: #b1b1b1;
+    text-decoration: none;
+    font-weight: 600;
+    /* margin-left: 35px; */
+    text-decoration: none;
+    /* transition: color .3s; */
+    transition: all .3s;
+}
+
+.navbar a:hover {
+    transform: translateY(-27px);
+    color: rgb(255, 255, 255);
+    /* transform: rotate(360deg); */
+}
+
+.navbar a:focus {
+    /* color: #ededed; */
+    transform: translateY(-27px);
+    /* text-decoration: underline; */
+    color: deepskyblue;
+}
 
 .about {
     text-align: center;
@@ -221,8 +293,8 @@ h1 {
     background-color: white;
     border-radius: 10px;
     padding: 10px;
-    text-align: left;
     line-height: 40px;
+    text-align: left;
     box-shadow: 0 0 8px rgb(0,0,0,.4);
     z-index: 100;
     
@@ -430,12 +502,12 @@ ul a li:hover{
     /* background-color: red; */
 }
 
-.icons a i{
+.icons a i, .s-drop a i{
     font-size: 24px;
     color: rgb(31, 31, 31);
 }
 
-.icons a i:hover{
+.icons a i:hover, .s-drop a i:hover{
     color: deepskyblue;
 }
 

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,46 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="ext-scripts/jquery-3.7.0.js"></script>
 </head>
+
 <body>
     <div class="top">
-        <header id="header">
+        <header class="header">
             <a href="#" class="logo">Aman<span>.</span></a>
-            
+
             <nav class="navbar">
                 <div class="items"><a href="#">Home<br>Home</a></div>
-                <div class="items"><a href="#">About<br>About</a></div>
+                <div class="items exp"><a href="#">Explore v<br>Explore v</a></div>
                 <div class="items"><a href="#">Services<br>Services</a></div>
                 <div class="items"><a href="#">Portfolio<br>Portfolio</a></div>
                 <div class="items"><a href="#">Contact<br>Contact</a></div>
             </nav>
+            <div class="explore">
+                <div class="e-drop">
+                    <div class="e-drop1">
+                        <div class="drop-heading">Media</div>
+                        <a class="drop-item" href=""><div><i class='bx bxs-image-alt'></i>Images</div></a>
+                        <a class="drop-item" href=""><div><i class='bx bxs-video'></i>Videos</div></a>
+                        <a class="drop-item" href=""><div><i class='bx bxs-music'></i>Music</div></a>
+                        <a class="drop-item" href=""><div><i class='bx bxl-deezer'></i>Sound effects</div></a>
+                    </div>
+
+                    <div class="e-drop2">
+                        <div class="drop-heading">Discover</div>
+                        <a class="drop-item" href=""><div>Editor's Choice</div></a>
+                        <a class="drop-item" href=""><div>Popular Images</div></a>
+                        <a class="drop-item" href=""><div>Popular Videos</div></a>
+                        <a class="drop-item" href=""><div>Popular Music</div></a>
+                        <a class="drop-item" href=""><div>Popular Searches</div></a>
+                    </div>
+                </div>
+
+                <div class="s-drop">
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                </div>
+            </div>
         </header>
         <center>
             <div class="about">
@@ -33,7 +62,7 @@
                         <a href=""><i class="bx bx-search"></i></a>
                         <input type="text" id="s-box" placeholder="Type something...">
                     </div>
-                    
+
                     <input class="dropdown" type="text" onclick="drop()" placeholder="All media" readonly>
                 </div>
                 <div class="options " id="options">
@@ -47,32 +76,70 @@
             </div>
         </center>
     </div>
-    
+
     <div class="opts">
-        <a href="#"><div class="opts-btn"><i class='bx bxs-home'></i>Home</div></a>
-        <a href="#"><div class="opts-btn"><i class='bx bxs-image-alt'></i>Images</div></a>
-        <a href="#"><div class="opts-btn"><i class='bx bxs-video'></i>Videos</div></a>
-        <a href="#"><div class="opts-btn"><i class='bx bxs-music'></i>Music</div></a>
-        <a href="#"><div class="opts-btn"><i class='bx bxl-deezer'></i>Sound effects</div></a>
-        <a href="#"><div class="opts-btn"><i class='bx bxs-user'></i>Users</div></a>
+        <a href="#">
+            <div class="opts-btn"><i class='bx bxs-home'></i>Home</div>
+        </a>
+        <a href="#">
+            <div class="opts-btn"><i class='bx bxs-image-alt'></i>Images</div>
+        </a>
+        <a href="#">
+            <div class="opts-btn"><i class='bx bxs-video'></i>Videos</div>
+        </a>
+        <a href="#">
+            <div class="opts-btn"><i class='bx bxs-music'></i>Music</div>
+        </a>
+        <a href="#">
+            <div class="opts-btn"><i class='bx bxl-deezer'></i>Sound effects</div>
+        </a>
+        <a href="#">
+            <div class="opts-btn"><i class='bx bxs-user'></i>Users</div>
+        </a>
     </div>
 
     <div class="filter">
-        <a href=""><div>nature</div></a>
-        <a href=""><div>wallpaper</div></a>
-        <a href=""><div>background</div></a>
-        <a href=""><div>sky</div></a>
-        <a href=""><div>scenery</div></a>
-        <a href=""><div>food</div></a>
-        <a href=""><div>water</div></a>
-        <a href=""><div>flowers</div></a>
-        <a href=""><div>beach</div></a>
-        <a href=""><div>love</div></a>
-        <a href=""><div>cat</div></a>
-        <a href=""><div>forest</div></a>
-        <a href=""><div>iphone wallpaper</div></a>
+        <a href="">
+            <div>nature</div>
+        </a>
+        <a href="">
+            <div>wallpaper</div>
+        </a>
+        <a href="">
+            <div>background</div>
+        </a>
+        <a href="">
+            <div>sky</div>
+        </a>
+        <a href="">
+            <div>scenery</div>
+        </a>
+        <a href="">
+            <div>food</div>
+        </a>
+        <a href="">
+            <div>water</div>
+        </a>
+        <a href="">
+            <div>flowers</div>
+        </a>
+        <a href="">
+            <div>beach</div>
+        </a>
+        <a href="">
+            <div>love</div>
+        </a>
+        <a href="">
+            <div>cat</div>
+        </a>
+        <a href="">
+            <div>forest</div>
+        </a>
+        <a href="">
+            <div>iphone wallpaper</div>
+        </a>
     </div>
-    
+
     <div class="gallery" id="gallery">
         <div class="col col1">
             <div class="block"><img loading="lazy" src="Assets/alonso-reyes-haZNHEV2WXQ-unsplash.jpg" alt=""></div>
@@ -87,7 +154,8 @@
         </div>
         <div class="col col2">
             <div class="block"><img loading="lazy" src="Assets/860661.jpg" alt=""></div>
-            <div class="block"><img loading="lazy" src="Assets/agustin-diaz-gargiulo-7F65HDP0-E0-unsplash.jpg" alt=""></div>
+            <div class="block"><img loading="lazy" src="Assets/agustin-diaz-gargiulo-7F65HDP0-E0-unsplash.jpg" alt="">
+            </div>
             <div class="block"><img loading="lazy" src="Assets/pexels-andrew-neel-4436700.jpg" alt=""></div>
             <div class="block"><img loading="lazy" src="Assets/pexels-veeterzy-39811.jpg" alt=""></div>
             <div class="block"><img loading="lazy" src="Assets/pexels-jarod-lovekamp-3791466.jpg" alt=""></div>
@@ -108,7 +176,8 @@
             <div class="block"><img loading="lazy" src="Assets/max-22zwZgax33c-unsplash.jpg" alt=""></div>
         </div>
         <div class="col col4">
-            <div class="block"><img loading="lazy" src="Assets/agustin-diaz-gargiulo-7F65HDP0-E0-unsplash.jpg" alt=""></div>
+            <div class="block"><img loading="lazy" src="Assets/agustin-diaz-gargiulo-7F65HDP0-E0-unsplash.jpg" alt="">
+            </div>
             <div class="block"><img loading="lazy" src="Assets/plant.png" alt=""></div>
             <div class="block"><img loading="lazy" src="Assets/milad-fakurian-wNsHBf_bTBo-unsplash.jpg" alt=""></div>
             <div class="block"><img loading="lazy" src="Assets/pexels-jarod-lovekamp-3791466.jpg" alt=""></div>
@@ -123,73 +192,58 @@
         <button class="load" onclick="loadmore()">Load More</button>
     </center>
     <br>
-        <footer class="foot">
-            <div class="brand">
-                <h1 class="logo">Aman<span>.</span></h1><br>
-                <p>Over 4.2 million+ high quality stock images, videos and music shared by our talented community.</p><br>
-                <div class="icons">
-                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                    <a href="#"><i class='bx bxl-pinterest' ></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
-                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
-                </div>
+    <footer class="foot">
+        <div class="brand">
+            <h1 class="logo">Aman<span>.</span></h1><br>
+            <p>Over 4.2 million+ high quality stock images, videos and music shared by our talented community.</p><br>
+            <div class="icons">
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
             </div>
-            <table class="ftable">
-                <tr>
-                    <ul>
-                        <li class="title">Explore</li>
-                        <a href="#"><li>Editor's choice</li></a>
-                        <a href="#"><li>Popular Images</li></a>
-                        <a href="#"><li>Popoular Videos</li></a>
-                        <a href="#"><li>Top Searches</li></a>
-                    </ul>
-                    <ul>
-                        <li class="title">Community</li>
-                        <a href="#"><li>Blog</li></a>
-                        <a href="#"><li>Discord</li></a>
-                        <a href="#"><li>Facebook</li></a>
-                        <a href="#"><li>Forum</li></a>
-                    </ul>
-                    <ul>
-                        <li class="title">About</li>
-                        <a href="#"><li>About us</li></a>
-                        <a href="#"><li>FAQs</li></a>
-                        <a href="#"><li>Privacy Policy</li></a>
-                        <a href="#"><li>Cookies Policy</li></a>
-                    </ul>
-                </tr>
-            </table>
-        </footer>
+        </div>
+        <table class="ftable">
+            <tr>
+                <ul>
+                    <li class="title">Explore</li>
+                    <a href="#">
+                        <li>Editor's choice</li>
+                    </a>
+                    <a href="#">
+                        <li>Popular Images</li>
+                    </a>
+                    <a href="#">
+                        <li>Popoular Videos</li>
+                    </a>
+                    <a href="#">
+                        <li>Top Searches</li>
+                    </a>
+                </ul>
+                <ul>
+                    <li class="title">Community</li>
+                    <a href="#"><li>Blog</li></a>
+                    <a href="#"><li>Discord</li></a>
+                    <a href="#"><li>Facebook</li></a>
+                    <a href="#"><li>Forum</li></a>
+                </ul>
+                <ul>
+                    <li class="title">About</li>
+                    <a href="#"><li>About us</li></a>
+                    <a href="#"><li>FAQs</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
+                    <a href="#"><li>Cookies Policy</li></a>
+                </ul>
+            </tr>
+        </table>
+    </footer>
     <div class="cy">
         <h4 class="text">
             Copyright © 2023 Aman Inc. All rights reserved.
         </h4>
     </div>
 
-    <script>
-        function show(anything){
-            document.querySelector('.dropdown').value = anything;
-        }
-
-        // let drop = document.querySelector('.dropdown');
-        // drop.onclick = function(){
-        //     drop.classList.toggle('active');
-        // }
-
-        function drop() {
-            var droping = document.getElementById("options");
-            droping.classList.toggle("active");
-        }
-
-        // let droping = document.querySelector('.options');
-        // droping.onclick = function(){
-        //     droping.classList.toggle('active');
-        // }
-
-        // function loadmore() {
-        //     var ext = document.getElementsById("gallery");
-        //     ext.classList.toggle("lm");
-        // }
-    </script>
+    <script src="idx-script.js"></script>
 </body>
+
 </html>
