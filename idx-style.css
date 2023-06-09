@@ -24,9 +24,9 @@ body {
     height: 470px;
 }
 
-/* .change1{
-    background: url(Assets/alexis-antoine-kXMe4hugFA4-unsplash111.jpg) center/cover;
-} */
+.change1{
+    background: url(Assets/8606611.jpg) center/cover;
+}
 
 .header {
     position: fixed;
@@ -61,6 +61,10 @@ body {
 
 .change .items a:hover{
     color: black;
+}
+
+.change .exp{
+    display: none;
 }
 
 .logo {
@@ -107,6 +111,8 @@ span {
 
 .explore{
     position: absolute;
+    margin-left: 497px;
+    margin-top: 55px;
     background-color: white;
     box-sizing: border-box;
     border-radius: 10px;
@@ -116,8 +122,9 @@ span {
 /* --------------------------here flex declaration-------------------------- */
 
 .explore, .e-drop1, .e-drop2{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    display: none;
 }
 
 .e-drop{
@@ -167,6 +174,34 @@ span {
     border-top: 1px solid grey;
 }
 
+.exp{
+    margin-top: 4px;
+}
+
+.exp a{
+    color: #b1b1b1;
+    padding: 10px;
+    border-radius: 100px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.exp a:hover{
+    background: radial-gradient(transparent, rgba(0, 0, 0, 0.178));
+    border: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+.exp a i{
+    color: #b1b1b1;
+    margin-left: 10px;
+    font-size: 1rem;
+    margin-right: 0;
+}
+
+.exp a:focus{
+    color: white;
+}
+
 .items a {
     font-size: 18px;
     color: #b1b1b1;
@@ -184,7 +219,7 @@ span {
     /* transform: rotate(360deg); */
 }
 
-.navbar a:focus {
+.navbar .items a:focus {
     /* color: #ededed; */
     transform: translateY(-27px);
     /* text-decoration: underline; */

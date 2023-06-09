@@ -40,12 +40,12 @@ $(document).ready(function () {
         }
     });
 
-    $('.top').click(function () {
-        // console.log('You clicked on top', this);
-        $(this).toggleClass('change1');
-    });
+    // $('.top').click(function () {
+    //     // console.log('You clicked on top', this);
+    //     $(this).toggleClass('change1');
+    // });
 
-    $(".top").hover(function(){
-
+    $('.exp').click(function (){
+        $('.explore, .e-drop1, .e-drop2').toggle().delayFadeOut("slow");
     });
 });
