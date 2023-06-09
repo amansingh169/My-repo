@@ -122,19 +122,21 @@ span {
 
 .e-drop{
     display: flex;
-    padding: 20px;
+    /* padding: 20px; */
     line-height: 40px;
-    gap: 30px;
+    /* gap: 30px; */
     /* display: none; */
 }
 
 .e-drop1{
     gap: 7px;
-    border-right: 2px solid grey;
-    padding-right: 30px;
+    padding: 20px;
+    border-right: 1px solid grey;
+    /* padding-right: 30px; */
 }
 
 .e-drop2{
+    padding: 20px;
     gap: 8.5px;
     margin-bottom: 20px;
 }
@@ -149,12 +151,20 @@ span {
 .drop-item div{
     color: rgb(0,0,0,.5);
     line-height: normal;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 7px;
 }
 
 .drop-item div:hover{
     background-color: rgba(0, 0, 0, .2);
+    color: black;
+}
+
+.s-drop{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    border-top: 1px solid grey;
 }
 
 .items a {
