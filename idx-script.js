@@ -31,11 +31,15 @@ function drop() {
 $(document).ready(function () {
     
     //jQuery code here
-    
+
+    $('hp').click();
+
     $(document).on('scroll', function () {
         if ($(window).scrollTop() > 10) {
             $('.header').addClass('change');
-        } else {
+        }
+        
+        else {
             $('.header').removeClass('change');
         }
     });
@@ -46,6 +50,11 @@ $(document).ready(function () {
     // });
 
     $('.exp').click(function (){
-        $('.explore, .e-drop1, .e-drop2').toggle().delayFadeOut("slow");
+        $('.explore, .e-drop1, .e-drop2').toggle();
+    });
+
+    $('.load').click(function(){
+        $(this).hide();
+        $('.gallery').addClass("lm");
     });
 });

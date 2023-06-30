@@ -449,15 +449,15 @@ a:focus .opts-btn i{
     justify-content: center;
     margin: 10px 2%;
     gap: 20px;
-    height: 300vh;
+    height: 1500px;
     overflow: hidden;
     box-shadow: inset 0 -250px 100px -100px #ffffff;
 }
 
-/* .lm{
-    display: flex;
-    height: auto;
-} */
+.lm{
+    height: 2700px;
+    box-shadow: none;
+}
 
 .col{
     display: flex;
